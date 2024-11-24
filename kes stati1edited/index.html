@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse and Mates</title>
+    <link rel="icon" type="image/x-icon" href="Boldly Brewed/Sarah Blake/aykon.png">
+    <link rel="stylesheet" href="style1.css">
+    <script src="script1.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo"><img src="Boldly Brewed/Sarah Blake/2.png" alt="Logo"></a>
+            <div class="navbar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="About Us.html" class="nav-link">About Us</a>
+                <a href="Portfolio.html" class="nav-link">Porfolio</a>
+                <a href="contact us.html" class="nav-link">Contacts</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="home container" id="home">
+        <div class="home-text">
+            <h1>Find Your Perfect Laptop, Work Smarter</h1>
+            <p>Welcome to <strong>Mouse and Mates</strong>, where every recommendation is tailored for your needs.</p>
+            <a href="#laptop-categories" class="btn">
+                <span>Explore Now</span>
+                <i class="bx bx-up-arrow-alt"></i>
+            </a>
+        </div>
+        <img src="Boldly Brewed/Sarah Blake/1.png" class="home-img" alt="Laptop">
+    </section>
+
+    <section id="laptop-categories" class="section">
+        <h2>Choose by Category</h2>
+        <div class="category-grid">
+          <div class="category-card">
+            <img src="Boldly Brewed/Categorize/1.png" alt="For Students">
+            <h3>For Students</h3>
+            <p>Lightweight, budget-friendly laptops for studies.</p>
+            <br>
+            <button> <a href="#students-laptops"> Browse</a></button>
+          </div>
+          <div class="category-card">
+            <img src="Boldly Brewed/Categorize/2.png" alt="For Gaming">
+            <h3>For Gaming</h3>
+            <p>High-performance laptops for the ultimate gaming experience.</p>
+            <button> <a href="#gaming-laptops"> Browse</a></button>
+          </div>
+          <div class="category-card">
+            <img src="Boldly Brewed/Categorize/3.png" alt="For Business">
+            <h3>For Business</h3>
+            <p>Professional laptops with a focus on battery life and portability.</p>
+            <button> <a href="#business-laptops"> Browse</a></button>
+          </div>
+          <div class="category-card">
+            <img src="Boldly Brewed/Categorize/4.png" alt="For Creators">
+            <h3>For Creators</h3>
+            <p>High-resolution screens and powerful processors for creative work.</p>
+            <button> <a href="#creators-laptops"> Browse</a></button>
+          </div>
+        </div>
+      </section>
+
+    <section id="students-laptops" class="section">
+        <h2>For Students</h2> <br>
+        <div class="featured-grid">
+            <div class="laptop-card" data-laptop="1">
+                </button>
+                <img src="Boldly Brewed/Laptop/Aspire5.png" alt="Acer Aspire 5">
+                <h3>Acer Aspire 5</h3>
+                <p>₱25,000</p>
+                <button onclick="showDetails(1)">View Details</button>
+                
+            </div>
+            <div class="laptop-card" data-laptop="2">
+                <img src="Boldly Brewed/Laptop/aspire3.png" alt="Acer Aspire 3">
+                <h3>Acer Aspire 3</h3>
+                <p>₱20,000</p>
+                <button onclick="showDetails(2)">View Details</button>
+            </div>
+            <div class="laptop-card" data-laptop="2">
+                <img src="Boldly Brewed/Laptop/Vivobook.png" alt="Asus Vivobook 16">
+                <h3>Asus Vivobook 16</h3>
+                <p>₱35,699</p>
+                <button onclick="showDetails(3)">View Details</button>
+            </div>
+        </div> <br>
+        <div class="featured-grid">
+            <div class="laptop-card" data-laptop="1">
+                <img src="Boldly Brewed/Laptop/acerChromeBook.png" alt="Acer Chromebook Plus 515">
+                <h3>Acer Chromebook Plus 515</h3>
+                <p>₱34,000</p>
+                <button onclick="showDetails(4)">View Details</button>
+            </div>
+            <div class="laptop-card" data-laptop="2">
+                <img src="Boldly Brewed/Laptop/lenovoIdeaPad.png" alt="Lenovo IdeaPad Slim 3">
+                <h3>Lenovo IdeaPad Slim 3</h3>
+                <p>₱27,638</p>
+                <button onclick="showDetails(5)">View Details</button>
+            </div>
+            <div class="laptop-card" data-laptop="2">
+                <img src="Boldly Brewed/Laptop/HP14.png" alt="HP 14">
+                <h3>HP 14</h3>
+                <p>₱16,599</p>
+                <button onclick="showDetails(6)">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="gaming-laptops" class="section">
+        <h2>For Gaming</h2> <br>
+        <div class="featured-grid">
+            <div class="laptop-card" data-laptop="1">
+                <img src="Boldly Brewed/Laptop2/1.png" alt="Acer Aspire 5">
+                <h3>MSI Raider GE78</h3>
+                <p>₱88,000</p>
+                <button onclick="showDetails(7)">View Details</button>
+            </div>
+            <div class="laptop-card" data-laptop="2">
+                <img src="Boldly Brewed/Laptop2/2.png" alt="Acer Aspire 3">
+                <h3>MSI GF63 Thin</h3>
+                <p>₱53,000</p>
+                <button onclick="showDetails(8)">View Details</button>
+            </div>
+            <div class="laptop-card" data-laptop="2">
+                <img src="Boldly Brewed/Laptop2/3.png" alt="Asus Vivobook 16">
+                <h3>Asus ROG Zephyrus</h3>
+                <p>₱108,000</p>
+                <button onclick="showDetails(9)">View Details</button>
+            </div>
+        </div> <br>
+        <div class="featured-grid">
+            <div class="laptop-card" data-laptop="1">
+                <img src="Boldly Brewed/Laptop2/4.png" alt="Acer Aspire 5">
+                <h3>Asus TUF Gaming</h3>
+                <p>₱60,000</p>
+                <button onclick="showDetails(10)">View Details</button>
+            </div>
+            <div class="laptop-card" data-laptop="2">
+                <img src="Boldly Brewed/Laptop2/5.png" alt="Acer Aspire 3">
+                <h3>Acer Nitro V</h3>
+                <p>₱69,000</p>
+                <button onclick="showDetails(11)">View Details</button>
+            </div>
+            <div class="laptop-card" data-laptop="2">
+                <img src="Boldly Brewed/Laptop2/6.png" alt="Asus Vivobook 16">
+                <h3>Acer Predator Helios Neo 16</h3>
+                <p>₱79,999</p>
+                <button onclick="showDetails(12)">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="business-laptops" class="section">
+        <h2>For Business</h2> <br>
+        <div class="featured-grid">
+            <div class="laptop-card" data-laptop="1">
+                <img src="Boldly Brewed/Laptop3/1.png" alt="Acer Aspire 5">
+                <h3>Asus Zenbook S 13 OLED</h3>
+                <p>₱63,000</p>
+                <button onclick="showDetails(13)">View Details</button>
+            </div>
+            <div class="laptop-card" data-laptop="2">
+                <img src="Boldly Brewed/Laptop3/2.png" alt="Acer Aspire 3">
+                <h3>Asus Zenbook S UX393</h3>
+                <p>₱85,883</p>
+                <button onclick="showDetails(14)">View Details</button>
+            </div>
+            <div class="laptop-card" data-laptop="2">
+                <img src="Boldly Brewed/Laptop3/3.png" alt="Asus Vivobook 16">
+                <h3>MacBook Air 13</h3>
+                <p>₱59,990</p>
+                <button onclick="showDetails(15)">View Details</button>
+            </div>
+        </div> <br>
+        <div class="featured-grid">
+            <div class="laptop-card" data-laptop="1">
+                <img src="Boldly Brewed/Laptop3/4.png" alt="Acer Aspire 5">
+                <h3>MacBook Pro 14</h3>
+                <p>₱99,990</p>
+                <button onclick="showDetails(16)">View Details</button>
+            </div>
+            <div class="laptop-card" data-laptop="2">
+                <img src="Boldly Brewed/Laptop3/5.png" alt="Acer Aspire 3">
+                <h3>Lenovo Thinkbook 14 Gen6</h3>
+                <p>₱35,000</p>
+                <button onclick="showDetails(17)">View Details</button>
+            </div>
+            <div class="laptop-card" data-laptop="2">
+                <img src="Boldly Brewed/Laptop3/6.png" alt="Asus Vivobook 16">
+                <h3>MSI Modern 15 - B12M</h3>
+                <p>₱40,499</p>
+                <button onclick="showDetails(18)">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="creators-laptops" class="section">
+        <h2>For Creators</h2> <br>
+        <div class="featured-grid">
+            <div class="laptop-card" data-laptop="1">
+                <img src="Boldly Brewed/Laptop3/4.png" alt="Acer Aspire 5">
+                <h3>Macbook Pro 14</h3>
+                <p>₱99,990</p>
+                <button onclick="showDetails(16)">View Details</button>
+            </div>
+            <div class="laptop-card" data-laptop="2">
+                <img src="Boldly Brewed/Laptop4/1.png" alt="Acer Aspire 3">
+                <h3>Dell XPS 17 (9730)</h3>
+                <p>₱94,244</p>
+                <button onclick="showDetails(19)">View Details</button>
+            </div>
+            <div class="laptop-card" data-laptop="2">
+                <img src="Boldly Brewed/Laptop4/2.png" alt="Asus Vivobook 16">
+                <h3>ROG Zephyrus Duo 16 (2023)</h3>
+                <p>₱242,900</p>
+                <button onclick="showDetails(20)">View Details</button>
+            </div>
+        </div> <br>
+        <div class="featured-grid">
+            <div class="laptop-card" data-laptop="1">
+                <img src="Boldly Brewed/Laptop4/3.png" alt="Acer Aspire 5">
+                <h3>Microsoft Surface Laptop Studio 2</h3>
+                <p>₱111,923</p>
+                <button onclick="showDetails(21)">View Details</button>
+            </div>
+            <div class="laptop-card" data-laptop="2">
+                <img src="Boldly Brewed/Laptop4/4.png" alt="Acer Aspire 3">
+                <h3>MSI Creator A16 AI</h3>
+                <p>₱106,018</p>
+                <button onclick="showDetails(22)">View Details</button>
+            </div>
+            <div class="laptop-card" data-laptop="2">
+                <img src="Boldly Brewed/Laptop4/5.png" alt="Asus Vivobook 16">
+                <h3>Acer Swift X 14</h3>
+                <p>₱82,649</p>
+                <button onclick="showDetails(23)">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="laptop-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title"></h3>
+            <img id="modal-image" src="" alt="" style="width:100%; border-radius:8px; margin-bottom: 10px;">
+            <p id="modal-specs"></p>
+            <p id="modal-price"></p>
+        </div>
+    </div>
+</body>
+</html>

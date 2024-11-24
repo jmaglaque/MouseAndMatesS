@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="Boldly Brewed/Sarah Blake/aykon.png">
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f6f2;
+        }
+        .portfolio {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .portfolio-title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #000;
+        }
+        .profile-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            
+        }
+        .profile {
+            text-align: center;
+            transition: transform 0.3s;
+            border: 1.3px solid #000;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 3px 3px 5px #6e6e6e;
+        }
+        .profile img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .profile:hover {
+            transform: scale(1.1);
+        }
+        .profile a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .profile-name {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo"><img src="Boldly Brewed/Sarah Blake/2.png" alt="Logo"></a>
+            <div class="navbar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="About Us.html" class="nav-link">About Us</a>
+                <a href="Portfolio.html" class="nav-link">Porfolio</a>
+                <a href="contact us.html" class="nav-link">Contacts</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="portfolio">
+        <div class="portfolio-title">Portfolio</div>
+        <div class="profile-container">
+            <div class="profile">
+                <a href="portfoliojayr.html">
+                    <img src="pics/jayr.jpg" alt="Jay-R Maglaque">
+                    <div class="profile-name">Jay-R Maglaque</div>
+                </a>
+            </div>
+            <div class="profile">
+                <a href="portfoliomargie.html">
+                    <img src="pics/margie.jpg" alt="Margie Manabat">
+                    <div class="profile-name">Margie Manabat</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

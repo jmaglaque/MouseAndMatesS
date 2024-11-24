@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" type="image/x-icon" href="Boldly Brewed/Sarah Blake/aykon.png">
+    <link rel="stylesheet" href="about us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Add styles for the popup */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.3s ease;
+        }
+        .popup-content {
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            width: 60%;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+            text-align: left;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        .popup-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+        .popup-logo {
+            max-width: 200px; /* Make the image larger */
+            height: auto;
+            margin: auto; /* Center the image */
+        }
+        .close-btn {
+            padding-top: 100px;
+            padding-right: 350px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #ffffff;
+            transition: transform 2s;
+        }
+        .close-btn:hover { 
+            color: red; /* Change color on hover */ 
+            scale: (1.1);
+        }
+        .popup-content h2 {
+            font-size: 24px;
+            color: #333;
+            text-align: center; /* Center the heading */
+        }
+        .popup-content p {
+            text-align: justify;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo"><img src="Boldly Brewed/Sarah Blake/2.png" alt="Logo"></a>
+            <div class="navbar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="About Us.html" class="nav-link">About Us</a>
+                <a href="Portfolio.html" class="nav-link">Portfolio</a>
+                <a href="contact us.html" class="nav-link">Contacts</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="about-us">
+        <div class="text-content">
+            <h1>About Us</h1>
+            <p class="subtitle">Welcome to Mouse and Mates, where we simplify laptop specs and offer personalized recommendations just for you.</p>
+            <p>Our mission is to help you find the perfect laptop for your needs, whether you're a gamer, professional, student, or just need a reliable device. We provide honest, unbiased recommendations to match your lifestyle and budget, with your satisfaction as our top priority.</p>
+            <a href="#" class="btn" onclick="openPopup()">Read More</a>
+            <div class="social-icons">
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=61556598999617"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="image-content">
+            <img src="Boldly Brewed/Sarah Blake/logow.png" alt="Man working on a laptop">
+        </div>
+    </section>
+
+    <div class="popup-overlay" id="popup">
+        <button class="close-btn" onclick="closePopup()">×</button>
+        <div class="popup-content">
+            <div class="popup-header">
+                <img src="Boldly Brewed/Sarah Blake/logow.png" alt="Logo" class="popup-logo">
+                
+            </div>
+            <h2>Welcome to Mouse and Mates</h2>
+            <p>Your ultimate companion in finding the perfect laptop! We understand that choosing the right device can be overwhelming with the countless options available in today's market. That's why we're here—to make your decision-making process effortless and enjoyable.</p>
+            <p>At Mouse and Mates, our mission is simple yet impactful: to provide you with expert advice, tailored recommendations, and up-to-date insights into the world of laptops. Whether you’re a professional needing a powerhouse for demanding tasks, a gamer looking for peak performance, a student requiring a portable yet efficient device, or simply someone in need of a reliable laptop for daily use, we have you covered.</p>
+            <p>We pride ourselves on delivering honest, unbiased advice. Our team of tech enthusiasts thoroughly researches and tests the latest laptops to ensure our recommendations align with your specific needs and budget. Beyond that, we believe in transparency, offering guidance you can trust, so you feel confident in every decision you make.</p>
+            <p>More than just a laptop finder, we’re a community. With customer satisfaction as our top priority, we aim to build lasting relationships by simplifying technology and empowering you to make informed choices. Whether you’re a tech novice or a seasoned expert, Mouse and Mates is here to assist you at every step of your journey.</p>
+            <p>Join us, explore our curated resources, and let’s discover the perfect laptop for your lifestyle together. Because at Mouse and Mates, it’s not just about the specs—it’s about finding a device that fits you.</p>
+        </div>
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById("popup").style.visibility = "visible";
+            document.getElementById("popup").style.opacity = "1";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.visibility = "hidden";
+            document.getElementById("popup").style.opacity = "0";
+        }
+    </script>
+</body>
+</html>

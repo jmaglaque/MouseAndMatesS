@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profolio</title>
+    <link rel="icon" type="image/x-icon" href="Boldly Brewed/Sarah Blake/aykon.png">
+    <link rel="stylesheet" href="portfoliomargie.css">
+    
+    <script src="script1.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        function changeImage(imageSrc) {
+        const largeImage = document.getElementById('largeImage');
+        largeImage.src = imageSrc;
+        }
+      </script>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo"><img src="portfolio2/2.png" alt="Logo"></a>
+            <div class="navbar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="About Us.html" class="nav-link">About Us</a>
+                <a href="Portfolio.html" class="nav-link">Porfolio</a>
+                <a href="contact us.html" class="nav-link">Contacts</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="about-header">
+            <h1>About</h1>
+            <p>A piece of me</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I’m <strong>Margie C. Manabat</strong>, 20 years old and a 2nd year IT student at Nueva Ecija University of Science and Technology. My journey into technology began when I discovered the fascinating world of coding and how it powers the websites and apps we use every day. This sparked my passion for web development and programming, leading me to explore various tools and technologies to build functional, user-friendly projects.</p> <br>
+                <p>Currently, I’m diving deep into tech reviews and research, specializing in recommending laptops for students. This allows me to combine my love for technology with my analytical skills to provide valuable insights. As I continue my journey, I’m focused on mastering both front-end and back-end development, always eager to embrace new challenges and technologies.</p>
+            </div>
+            <div class="about-photo">
+                <img src="portfolio2/margie.png" alt="Margie C. Manabat">
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="skills-section">
+        <h1>Featured Skills</h1>
+        <div class="skills-container">
+          <div class="skill-item"><img src="portfolio2/icon/1.png" alt="HTML">HTML</div>
+          <div class="skill-item"><img src="portfolio2/icon/2.png" alt="CSS">CSS</div>
+          <div class="skill-item"><img src="portfolio2/icon/3.png" alt="JavaScript">JavaScript</div>
+          <div class="skill-item"><img src="portfolio2/icon/5.png" alt="C++">C++</div>
+      </div>
+
+      <br> <br> <br>
+
+      <div class="content">
+        <h1>Showcase of My Projects</h1>
+        <div class="portfolio">
+          <div class="large-box" id="largeBox">
+            <img src="portfolio2/HTML.png" alt="Selected Work" id="largeImage">
+          </div>
+          <div class="thumbnails">
+            <div class="thumbnail" onclick="changeImage('portfolio2/HTML.png')">
+              <img src="portfolio2/icon/1.png" alt="Work 1">
+            </div>
+            <h4>HTML</h4>
+            <br>
+            <div class="thumbnail" onclick="changeImage('portfolio2/C++.png')">
+              <img src="portfolio2/icon/5.png" alt="Work 2">
+            </div>
+            <h4>C++</h4>
+          </div>
+        </div>
+      </div>
+
+      <br> <br> <br>
+ 
+
+      <div class="timeline1">
+        <h1>Educational Background</h1>
+        <div class="timeline">
+            <div class="timeline-item">
+            <div class="timeline-item-content">
+                <span class="year">1st Year - Present</span>
+                <h4>College (BSIT)</h4>
+                <p>As a second-year IT student, I am polishing my skills in web development (HTML, CSS, JavaScript), networking, and programming (CC-103, Java). Among my current activities are the development of useful websites and tiny apps that address current challenges. These encounters have improved my technical expertise and collaborative abilities, developing me for upcoming IT problems.</p>
+            </div>
+            </div>
+            <div class="timeline-item">
+            <div class="timeline-item-content">
+                <span class="year">2021 - 2023</span>
+                <h4>Senior High School (STEM)</h4>
+                <p>I decided to pursue the STEM strand in senior high school in order to expand my knowledge of technical subjects like calculus, physics, and empowerment technology. I became more prepared to deal with the technical responsibilities of being an IT student because to these subjects.</p>
+            </div>
+            </div>
+            <div class="timeline-item">
+            <div class="timeline-item-content">
+                <span class="year">2017 - 2021</span>
+                <h4>Junior High School</h4>
+                <p>I continued to do well as students, mostly in science and math, and this was when my passion in technology began.</p>
+            </div>
+            </div>
+            <div class="timeline-item">
+            <div class="timeline-item-content">
+                <span class="year">2010 - 2017</span>
+                <h4>Grade School</h4>
+                <p>I completed my elementary education and built a solid academic foundation, especially in science and mathematics.</p>
+            </div>
+            </div>
+        </div>
+      </div>

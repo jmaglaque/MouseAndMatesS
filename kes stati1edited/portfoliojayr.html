@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="Boldly Brewed/Sarah Blake/aykon.png">
+    <link rel="stylesheet" href="portfoliojayr.css">
+    <script src="script1.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        function changeImage(imageSrc) {
+        const largeImage = document.getElementById('largeImage');
+        largeImage.src = imageSrc;
+        }
+      </script>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo"><img src="portfolio/2.png" alt="Logo"></a>
+            <div class="navbar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="About Us.html" class="nav-link">About Us</a>
+                <a href="Portfolio.html" class="nav-link">Porfolio</a>
+                <a href="contact us.html" class="nav-link">Contacts</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="about-header">
+            <h1>About</h1>
+            <p>A piece of me</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I’m <strong>Jay-R D. Maglaque</strong>, 19 years old and a second-year BSIT student in NEUST Sumacab. Finding out that websites are made with HTML and CSS got me excited about web development so, that made me really interested in computers and programming.</p> <br>
+                <p>Right now, I’m just going with the flow, exploring web development at my own pace and learning as I go. As a second-year student, I’m taking things one step at a time, balancing my studies with hands-on learning in Web Systems Technology. While I’m currently focused on front-end development, I’m keeping an open mind and might try back-end development someday if it feels right.</p>
+            </div>
+            <div class="about-photo">
+                <img src="portfolio/jayr.png" alt="Jay-R D. Maglaque">
+            </div>
+        </div>
+    </div>
+
+    <div class="skills-section">
+        <h1>Featured Skills</h1>
+        <div class="skills-container">
+          <div class="skill-item"><img src="portfolio/icon/1.png" alt="HTML">HTML</div>
+          <div class="skill-item"><img src="portfolio/icon/2.png" alt="CSS">CSS</div>
+          <div class="skill-item"><img src="portfolio/icon/3.png" alt="JavaScript">JavaScript</div>
+          <div class="skill-item"><img src="portfolio/icon/4.png" alt="Java">Java</div>
+        </div>
+        <div class="skills-container">
+          <div class="skill-item"><img src="portfolio/icon/5.png" alt="C++">C++</div>
+          <div class="skill-item"><img src="portfolio/icon/6.png" alt="Canva">Canva</div>
+          <div class="skill-item"><img src="portfolio/icon/7.png" alt="Capcut">Capcut</div>
+        </div>
+      </div>
+
+      <br> <br> <br>
+
+      <div class="content">
+        <h1>Showcase of My Projects</h1>
+        <div class="portfolio">
+          <div class="large-box" id="largeBox">
+            <img src="portfolio/HTML.png" alt="Selected Work" id="largeImage">
+          </div>
+          <div class="thumbnails">
+            <div class="thumbnail" onclick="changeImage('portfolio/HTML.png')">
+              <img src="portfolio/icon/1.png" alt="Work 1">
+            </div>
+            <h4>HTML</h4>
+            <br>
+            <div class="thumbnail" onclick="changeImage('portfolio/C++.png')">
+              <img src="portfolio/icon/5.png" alt="Work 2">
+            </div>
+            <h4>C++</h4>
+            <br>
+            <div class="thumbnail" onclick="changeImage('portfolio/Canva.png')">
+              <img src="portfolio/icon/6.png" alt="Work 3">
+            </div>
+            <h4>Canva</h4>
+          </div>
+        </div>
+      </div>
+
+      <br> <br> <br>
+ 
+
+      <div class="timeline1">
+        <h1>Educational Background</h1>
+        <div class="timeline">
+            <div class="timeline-item">
+            <div class="timeline-item-content">
+                <span class="year">1st Year - Present</span>
+                <h4>College (BSIT)</h4>
+                <p>As a second-year IT student, I have turned my initial desire in technology into actual abilities. I am skilled in web development (HTML, CSS, and JavaScript) and programming (CC-103, Java). Among my efforts are the development of responsive functional websites. These instances deepened my pledge of applying technology to address reality and improve the IT industry.</p>
+            </div>
+            </div>
+            <div class="timeline-item">
+            <div class="timeline-item-content">
+                <span class="year">2021 - 2023</span>
+                <h4>Senior High School (STEM)</h4>
+                <p>Choosing the STEM strand was an obvious progression since it gave me the opportunity to dig deeper into my fondness of technology. I improved my analytical skills during these years by mastering complex concepts in science and technology. My desire to pursue a profession in technology had been reinforced by the possibilities to apply scientific information to everyday tasks.</p>
+            </div>
+            </div>
+            <div class="timeline-item">
+            <div class="timeline-item-content">
+                <span class="year">2017 - 2021</span>
+                <h4>Junior High School</h4>
+                <p>I grabbed every chance to increase my knowledge regarding technology while I was in junior high. I was able to experiment with doing barely projects like editorials and other tech-related stuff since I joined a school group that focused on technology. I built a foundation for my future studies with my consistent academic progress and developing interest in IT.</p>
+            </div>
+            </div>
+            <div class="timeline-item">
+            <div class="timeline-item-content">
+                <span class="year">2010 - 2017</span>
+                <h4>Grade School</h4>
+                <p>My expertise in technology started in elementary school, when I was constantly captivated by computers and frequently experimented with educational games and simple software tools, which piqued my interest in how technology functions.</p>
+            </div>
+            </div>
+        </div>
+      </div>

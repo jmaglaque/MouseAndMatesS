@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="Boldly Brewed/Sarah Blake/aykon.png">
+    <link rel="stylesheet" href="contact css.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo"><img src="Boldly Brewed/Sarah Blake/2.png" alt="Logo"></a>
+            <div class="navbar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="About Us.html" class="nav-link">About Us</a>
+                <a href="Portfolio.html" class="nav-link">Porfolio</a>
+                <a href="contact us.html" class="nav-link">Contacts</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <div class="info">
+                    <p><span>📍</span> Cabanatuan City, Nueva Ecija</p>
+                    <p><span>📧</span> infomouseandmates@gmail.com</p>
+                    <p><span>📞</span> +63 (951) 670 3358</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Send us a Message</h2>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" placeholder="Your message" rows="4" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const data = {};
+            formData.forEach((value, key) => (data[key] = value));
+            
+            fetch('https://sheetdb.io/api/v1/9cprh6p4ussvh', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ data: [data] }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Message sent and saved successfully!');
+            })
+            .catch((error) => {
+                alert('Failed to send the message. Please try again.');
+            });
+        });
+    </script>
+</body>
+</html>
